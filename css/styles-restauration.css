@@ -1,0 +1,104 @@
+@media (max-width: 431px) {
+    .chef{
+        width: 100wh;
+        margin: 3rem;
+    }
+    .chef img{
+        width: 100%;
+        height: auto;
+        margin-top: 2rem;
+        border-radius: 5px;
+    }
+    .desc{
+        color: black;
+        margin: 3rem;
+    }
+    .desc h2{
+        font-weight: 100;
+        font-size: 1.5rem;
+    }
+    .img-restaurant{
+        width: 100wh;
+        margin: 3rem;
+        font-size: 1.5rem;
+    }
+    .img-restaurant img{
+        width: 100%;
+        border-radius: 5px;
+    }
+    .img-restaurant p{
+        margin-top: 1rem;
+    }
+    .img-menu{
+        width: 100wh;
+        margin: 3rem;
+        background-color: #EDE5DA;
+        padding: .5rem;
+        border-radius: 5px;
+    }
+    .img-menu img{
+        width: 100%;
+        border-radius: 5px;
+    }
+    .img-menu p{
+        color: black;
+        font-size: 1.8rem;
+    }
+    .menu-carte{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 0;
+    }
+    .menu-carte img{
+        width: 100%;
+    }
+    .desc{
+        background-color: #222D52;
+        color: white;
+        padding: 1rem;
+        border-radius: 5px;
+    }
+    .img-restaurant p{
+        background-color: #222D52;
+        color: white;
+        padding: 1rem;
+        border-radius: 5px;
+    }
+}
+
+@media (min-width:768px) {
+    /* body{
+        font-family: 'roboto', sans-serif;
+    } */
+    .chef-marx{
+        display: flex;
+        margin: 2rem;
+    }
+    .desc{
+        width: 38rem;
+        font-size: 3rem;
+    }
+    .desc h2{
+        font-weight: 100;
+    }
+    .img-restaurant{
+        display: flex;
+        flex-direction: row-reverse;
+        font-size: 3rem;
+    }
+
+    .img-menu{
+        display: flex;
+        align-items: center;
+        gap: 5rem;
+        margin-top: 2rem;
+    }
+    .img-menu p{
+        font-size: 3rem;
+        text-decoration: none;
+        color: black;
+    }
+}

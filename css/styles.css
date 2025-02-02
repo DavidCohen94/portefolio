@@ -1,0 +1,466 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100wh;
+}
+
+h1 {
+    font-family: 'Dynalight', sans-serif;
+}
+
+@media (max-width: 391px) {
+    body {
+        background-color: #FDFFFF;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        overflow-x: hidden;
+        font-family: 'roboto', sans-serif;
+    }
+    header {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #FDFFFF;
+        width: 100%;
+        height: 4rem;
+        padding: 0.8rem;
+    }
+    header img {
+        width: 5rem;
+    }
+
+    .burger-menu {
+        height: 100vh;
+        width: 100%;
+        background-color: #E8E5E0;
+        max-width: 100%;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 3rem;
+        transition: .3s ease;
+        z-index: 9999;
+    }
+    .burger-menu ul{
+        list-style: none;
+    }
+    .burger-menu li{
+        margin: 2rem 0;
+        list-style: none;
+    }
+    .burger-menu a{
+        text-decoration: none;
+        list-style: none;
+        color: #000000;
+        margin: 5rem 0;
+        
+    }
+
+    .burger-menu.active {
+        right: 0;
+    }
+
+    .burger {
+        width: 50px;
+        height: 50px;
+        position: relative;
+        margin-left: auto;
+        z-index: 10000;
+    }
+
+    .icon {
+        fill: #000000;
+    }
+
+    #fond-top {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        overflow-x: hidden;
+    }
+
+    #fond-top img {
+        width: 300%;
+    }
+    #fond-top #title {
+        position: absolute;
+        bottom: 5%;
+        color: #D2B68A;
+        display: flex;
+        text-align: center;
+        font-size: 1.3rem;
+    }
+    #fond-top #logo img {
+        width: 11rem;
+        position: absolute;
+        bottom: 50%;
+        right: 50%;
+        display: flex;
+    }
+    .container-contact {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: 1.2rem 0;
+    }
+    .contact-address {
+        width: 20rem;
+        height: 5rem;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.3rem;
+    }
+    .contact-address img {
+        width: 1.5rem;
+        margin-right: 0.5rem;
+    }
+    #bottom-line {
+        display: flex;
+        align-items: center;
+    }
+    #bottom-line a {
+        text-decoration: none;
+        color: black;
+    }
+    .line-breaker {
+        border: #222D52 solid 1px;
+        width: 14rem;
+        margin: 0.5rem;
+    }
+    .container-services {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        position: relative;
+    }
+    .service {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: rgb(15,24,51);
+        background: linear-gradient(288deg, rgba(15,24,51,1) 0%, rgba(66,76,112,1) 46%, rgba(34,45,82,1) 72%);
+        border-radius: 5px;
+        transition: transform ease 0.3s;
+        position: relative;
+    }
+    .service:hover {
+        transform: scale(1.04);
+    }
+    .service p {
+        font-size: 1.5rem; /* Adjusted size */
+        margin: 1rem;
+        color: white;
+    }
+    .service img {
+        width: 100%;
+        border-radius: 0px 0px 5px 5px;
+    }
+    .content {
+        position: relative;
+        height: 0;
+        overflow: hidden;
+        overflow-y: auto;
+        transition: .5s ease;
+    }
+    .content.active {
+        height: min-content;
+    }
+
+    .content button{
+        width: 100%;
+        text-decoration: none;
+    }
+
+    .content button a{
+        text-decoration: none;
+        color: black;
+        font-size: 1.5rem;
+    }
+    
+    
+    button {
+        width: 100px;
+        height: 50px;
+        border-radius: 10px;
+    }
+
+    
+}
+footer {
+    margin-top: 20px;
+    background-color: #212E51;
+    color: #FDFFFE;
+    padding: 20px 0;
+    font-family: Arial, sans-serif;
+}
+.footer-content {
+    display: inline-block;
+    justify-content: center;
+    max-width: 1200px;
+    /* margin: 0 auto; */
+    padding: 0 20px;
+    flex-wrap: wrap; /* Permet d’adapter la disposition en fonction de la taille de l'écran */
+}
+
+.footer-content div {
+    flex: 1;
+    margin: 0 10px;
+    min-width: 280px; /* Minimum width pour chaque section */
+}
+
+.footer-about p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.footer-links ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-right: 10px;
+    display: inline-block;
+}
+
+.footer-links a {
+    color: #ecf0f1;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.footer-where{
+    margin-left: 15rem;
+}
+
+iframe {
+    width: 500px; /* S'adapte à la largeur de l'écran */
+    height: 250px; /* Augmente légèrement la hauteur de la carte pour un meilleur rendu */
+}
+
+/* Media queries pour ajuster le layout sur les petits écrans */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column; /* Les sections s'empilent verticalement sur des petits écrans */
+        align-items: center; /* Centrer les sections */
+    }
+
+    .footer-about,
+    .footer-links,
+    .footer-where {
+        margin: 20px 0;
+    }
+
+    iframe {
+        width: 100%; 
+        height: 250px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-about p {
+        font-size: 12px; /* Réduit la taille de police pour les petits écrans */
+    }
+
+    .footer-links li {
+        font-size: 12px; /* Réduit également la taille de police des liens */
+    }
+    .burger-menu ul{
+        list-style: none;
+    }
+    .burger-menu li{
+        margin: 2rem 0;
+        list-style: none;
+    }
+    .burger-menu a{
+        text-decoration: none;
+        list-style: none;
+        color: #000000;
+        margin: 5rem 0;
+        
+    }
+    .login-icon{
+        width: 2rem;
+        margin-right: 7rem;
+    }
+}
+
+@media(min-width: 768px){
+    body{
+        overflow-x: hidden;
+        padding-top: 6rem;
+    }
+    header{
+        background-color: whitesmoke;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: fixed;
+        top: 0;
+        z-index: 9999;
+    }
+
+    li{
+        list-style: none;
+        text-decoration: none;
+        font-size: 1.5rem;
+        margin: 1rem;
+    }
+    li a{
+        text-decoration: none;
+        color: #212E51;
+    }
+    ul{
+        display: flex;
+    }
+    hr{
+        display: none;
+    }
+    .burger{
+        display: none;
+    }
+    .logo img{
+        width: 10rem;
+    }
+    #fond-top{
+        width: 100wh;
+        position: relative;
+    }
+    #fond-top img{
+        width: 100%;
+    }
+    #fond-top #title{
+            position: absolute;
+            bottom: 25%;
+            right: 38%;
+            color: #D2B68A;
+            display: flex;
+            text-align: center;
+            width: max-content;
+            font-size: 2rem;
+    }
+    .container-contact {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: 1.2rem 0;
+    }
+    .contact-address {
+        width: 20rem;
+        height: 5rem;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.7rem;
+    }
+    .contact-address img {
+        width: 1.5rem;
+        margin-right: 0.5rem;
+    }
+    #bottom-line {
+        display: flex;
+        align-items: center;
+    }
+    #bottom-line a {
+        text-decoration: none;
+        color: black;
+    }
+    .line-breaker {
+        border: #222D52 solid 1px;
+        width: 14rem;
+        margin: 0.5rem;
+    }
+    /* .container-services{
+        display: flex;
+        width: 100wh;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .service{
+        width: 30rem;
+    }
+    .service img {
+        width: 30rem;
+    } */
+    .container-services{
+        display: flex;
+        width: 100wh;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .service{
+        margin: 2rem;
+        background: rgb(15,24,51);
+        background: linear-gradient(157deg, rgba(15,24,51,1) 0%, rgba(79,93,142,1) 40%, rgba(45,66,139,1) 72%);
+        padding: 2rem;
+        border-radius: 10px;
+        color: white;
+        transition: transform .5s ease;
+        font-size: 1.5rem;
+        width: 32rem;
+    }
+    .service:hover{
+        transform: scale(1.05);
+    }
+    .service img{
+        width: 28rem;
+        height: 20rem;
+        border-radius: 10px;
+    }
+    .content button{
+        margin: .8rem 0;
+        width: 100%;
+        text-decoration: none;
+        box-shadow: 2px 2px 5px 5px rgba(0,0,0,.1);
+        outline: none;
+        border: none;
+    }
+
+    .content button a{
+        text-decoration: none;
+        color: black;
+        font-size: 1.5rem;
+    }
+    
+    
+    button {
+        width: 100px;
+        height: 50px;
+        border-radius: 10px;
+        background: rgb(232,229,224);
+        background: linear-gradient(146deg, rgba(232,229,224,1) 0%, rgba(237,229,218,1) 51%, rgba(255,255,255,1) 80%);
+    }
+    .login-icon{
+        width: 3rem;
+        margin: 1.5rem;
+    }
+}
