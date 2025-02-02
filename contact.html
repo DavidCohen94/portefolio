@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<style>
+    body{
+        width: 100wh;
+        height: 95vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    header{
+        position: fixed;
+        top: 0;
+    }
+    form{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 90%;
+    }
+    input{
+        margin: .5rem 0;
+    }
+</style>
+<body>
+    <header>
+        <div class="logo">
+            <img src="css/img/logo_cropped(2).png" alt="">
+        </div>
+        <div class="burger">
+            <svg class="icon" xmlns="http://www.w3.org/2000/svg" height="50px" viewBox="0 -960 960 960" width="50px" fill="#e8eaed">
+                <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/>
+            </svg>
+        </div>
+        <div class="burger-menu">
+            <ul>
+                <li><a href="index.php">Home</a></li>
+                <hr>
+                <li><a href="hebergement.html">Hébergement</a></li>
+                <hr>
+                <li><a href="massage.html">Salon de massage</a></li>
+                <hr>
+                <li><a href="piscine.html">Piscine</a></li>
+                <hr>
+                <li><a href="restaurant.html">Restauration</a></li>
+                <hr>
+                <li><a href="contact.html">Contact</a></li>
+                <hr>
+            </ul>
+        </div>
+    </header>
+    <form action="">
+        <input type="text" name="nom" placeholder="Nom">
+        <input type="text" name="prenom" placeholder="Prenom">
+        <input type="text" name="entreprise" placeholder="Entreprise (Facultatif)">
+        <input type="text" name="email" placeholder="email">
+        <input type="text" name="pays" placeholder="Pays">
+        <input type="text" name="sujet" placeholder="Sujet">
+        <input type="text" name="message" placeholder="Message">
+        <input type="submit" placeholder="Envoyer">
+
+    </form>
+    <script src="index.js"></script>
+</body>
+</html>
